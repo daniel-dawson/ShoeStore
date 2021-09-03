@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<!-- Could've used linear layout as it is simple vertical layout, but wanted practice   -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.welcome.WelcomeFragment">
+
+        <TextView
+            android:id="@+id/welcome_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:textSize="@dimen/text_size_36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.37" />
+
+        <TextView
+            android:id="@+id/welcome_aside_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/make_sure_to_wipe_your_feet"
+            android:textSize="@dimen/text_size_16sp"
+            app:layout_constraintEnd_toEndOf="@+id/welcome_text_view"
+            app:layout_constraintHorizontal_bias="0.50"
+            app:layout_constraintStart_toStartOf="@+id/welcome_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/welcome_text_view" />
+
+        <Button
+            android:id="@+id/continue_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_32dp"
+            android:text="@string/continue_button"
+            android:theme="@style/BasicButton"
+            app:layout_constraintEnd_toEndOf="@+id/welcome_aside_text_view"
+            app:layout_constraintStart_toStartOf="@+id/welcome_aside_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/welcome_aside_text_view" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

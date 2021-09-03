@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Could've used linear layout for simplicity but wanted practice   -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.instruction.InstructionFragment">
+
+        <TextView
+            android:id="@+id/instructionsTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_172dp"
+            android:text="@string/instruction_header"
+            android:textSize="@dimen/text_size_36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:gravity="center"
+            android:text="@string/frag_instruction_instructionText"
+            android:textSize="@dimen/text_size_16sp"
+            app:layout_constraintEnd_toEndOf="@id/instructionsTv"
+            app:layout_constraintStart_toStartOf="@id/instructionsTv"
+            app:layout_constraintTop_toBottomOf="@id/instructionsTv" />
+
+        <Button
+            android:id="@+id/instruction_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="256dp"
+            android:text="@string/instruction_to_store_btn"
+            android:theme="@style/BasicButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/instructionsTv" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

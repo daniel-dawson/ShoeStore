@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <string name="login_text">Login</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="welcome">Welcome!</string>
+    <string name="make_sure_to_wipe_your_feet">Make Sure To Wipe Your Feet</string>
+    <string name="continue_button">Continue</string>
+    <string name="instruction_header">Instructions</string>
+    <string name="instruction_to_store_btn">Shop Now</string>
+    <string name="frag_instruction_instructionText">Click a shoe to see it\'s details. Click the icon in the bottom right to add a new shoe</string>
+    <string name="frag_shoe_detail_name_hint">Name</string>
+    <string name="frag_shoe_detail_email_hint">Company</string>
+    <string name="frag_shoe_list_fab_content_desc">Add shoe</string>
+    <string name="frag_shoe_detail_cancel">Cancel</string>
+    <string name="frag_shoe_detail_save">Save</string>
+    <string name="frag_shoe_detail_desc">Description</string>
+    <string name="frag_shoe_detail_size">Size</string>
+    <string name="shoe_desc_error">Please provide shoe description</string>
+    <string name="shoe_valid_size_error">Please provide valid shoe size</string>
+    <string name="shoe_size_error">Please provide shoe size</string>
+    <string name="shoe_company_error">Please provide shoe company</string>
+    <string name="shoe_name_error">Please provide shoe name</string>
+    <string name="main_menu_logout">Logout</string>
+</resources>
